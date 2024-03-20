@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Component</title>
+  <style>
+    /* CSS styles */
+    .skill_container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+    .skill_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 1.5rem;
+      justify-content: center;
+    }
+    .skill_card {
+      background-color: #ffffff;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+    .skill_card_title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .skill_icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto;
+    }
+    .skill_description {
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+    }
+    /* Initially hide all cards */
+    .skill_card {
+      display: none;
+    }
+    /* Show all cards in desktop view */
+    @media screen and (min-width: 768px) {
+      .skill_card {
+        display: block;
+      }
+    }
+    /* Show only the first 6 cards in mobile view */
+    @media screen and (max-width: 767px) {
+      .skill_card:nth-child(-n+6) {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="w-full py-6 md:py-12 lg:py-16">
+    <div class="skill_container">
+      <div class="skill_grid gap-6 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+        <div class="skill_card">
+            <div class="skill_card_title">Html</div>
+            <img src="img/html5-logo-html-logo-0.png" alt="" class="skill_icon">
+           
+          </div>
+          
+        <div class="skill_card">
+          <div class="skill_card_title">Css</div>
+          <img src="img/css.png" alt="" class="skill_icon">
+          
+        </div>
+        <div class="skill_card">
+          <div class="skill_card_title">Js</div>
+          <img src="img/js.png" alt="" class="skill_icon">
+         
+        </div>
+        <div class="skill_card">
+          <div class="skill_card_title">Bootstrap</div>
+          <img src="img/bootstrap.png" alt="" class="skill_icon">
+          
+        </div>
+        <div class="skill_card">
+          <div class="skill_card_title">Php</div>
+          <img src="img/php.png" alt="" class="skill_icon">
+         
+        </div>
+        <div class="skill_card">
+          <div class="skill_card_title">MySql</div>
+          <img src="img/mysql.png" alt="" class="skill_icon">
+      
+        </div>
+        <!-- Add more cards here -->
+        <div class="skill_card">
+          <div class="skill_card_title">Figma</div>
+          <img src="img/figma.png" alt="" class="skill_icon">
+          
+        </div>
+        <div class="skill_card">
+          <div class="skill_card_title">Android</div>
+          <img src="img/android.png" alt="" class="skill_icon">
+         
+        </div>
+        <div class="skill_card">
+          <div class="skill_card_title">Flutter</div>
+          <img src="img/flutter.png" alt="" class="skill_icon">
+        
+        </div>
+        <div class="skill_card">
+          <div class="skill_card_title">Flutterflow</div>
+          <img src="img/flutter.jpg" alt="" class="skill_icon">
+
+        </div>
+        <div class="skill_card">
+          <div class="skill_card_title">Chatbot</div>
+          <img src="img/dialogflow.png" alt="" class="skill_icon">
+         
+        </div>
+        <div class="skill_card">
+          <div class="skill_card_title">Python</div>
+          <img src="img/python.png" alt="" class="skill_icon">
+         
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+</body>
+</html>
